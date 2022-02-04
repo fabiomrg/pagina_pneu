@@ -8,7 +8,7 @@
     dark
   >
     <v-container>
-      <v-row class="mb-1" no-gutters>
+      <v-row  no-gutters>
         <v-col cols="6"
         md="4">  
           <v-img
@@ -19,24 +19,30 @@
               max-width="300"
           />
         </v-col>  
+
+         <v-col>     
+          <v-card  >
            
-        <v-col cols="6"
-        md="4" class="mr-3 hidden-xs-only">     
+             </v-card>
+        </v-col>   
+
+        <v-col cols="10"
+        md="5" class="mr-3 hidden-xs-only">     
           <v-card class="pa-4" color="transparent" height="80" elevation="0"  >
             <v-icon left color="white">
               mdi-google-maps
             </v-icon>  
-            <b>Endereço</b><br/><a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF">Rua Carlos Vicari, 235</a><br/>
+            <b>Endereço (</b><a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF">Clique aqui para abrir o maps</a>)<br/><a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF">Rua Carlos Vicari, 235</a><br/>
             <a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF;">Pompéia - Água Branca - São Paulo</a>
           </v-card>
         </v-col>
             
-        <v-col class="mr-3 hidden-xs-only"> 
-          <v-card class="pa-4" color="transparent" height="80" elevation="0"  >
+        <v-col md="2"  class="hidden-xs-only"> 
+          <v-card  class="pa-4" color="transparent" height="80" elevation="0"  >
             <v-icon left color="white">
               mdi-phone
             </v-icon>  
-            <b>Telefone / WhatsApp</b><br/> <a href="tel:+55-11-3862-4428" style="color:#FFFFFF">(11) 3862-4428</a><br/>
+            <b>Contato</b><br/> <a href="tel:+55-11-3862-4428" style="color:#FFFFFF">(11) 3862-4428</a><br/>
               <a href="tel:+55-11-98433-2546" style="color:#FFFFFF">(11) 98433-2546</a> <br/><br/>
           </v-card>
         </v-col>   
@@ -56,9 +62,6 @@
       </v-card>
     </v-container>
     <v-container id="div2" align="left">
-      <p class="black--text font-weight-black"> 
-      Passeio > ARO 17 PRIMACY 4 225/50R17 98Y XL
-      </p>
       <v-row align-text="left" no-gutters> 
         <v-img 
           max-width="200"
@@ -66,12 +69,12 @@
         />
       </v-row>  
       <br/>
-      <p class="black--text font-weight-black"> 
-      Michelin ARO 17 PRIMACY 4 225/50R17 98Y XL
-      </p>
+      
+      <h2 class="black--text font-weight-black"> Pneu ARO 17 PRIMACY 4 225/50R17 98Y XL</h2><br/>
+    
       <ul>
-        <li class="black--text font-weight-black">Aceitamos todos os cartões de crédito</li>
-        <li class="black--text font-weight-black">PIX</li>  
+        <li class="black--text font-weight-black"><h2>Aceitamos todos os cartões de crédito</h2></li>
+        <li class="black--text font-weight-black"><h2>PIX</h2></li>  
       </ul> 
       <br/>
       <v-btn 
@@ -148,18 +151,18 @@
       width="500"
 
     >
-      <v-card dark>
-        <v-card-title class="text-h5 black lighten-2">
-          Nossa loja
-        </v-card-title>
-
-        <v-card-text>
+      <v-card >
+      
+        <v-card-text class=text-center >
           <br/>
-           <h3>Endereço:</h3><br/><a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF; text-decoration: none">Rua Carlos Vicari, 235  (clique aqui para abrir o google maps)</a><br/>
-           <a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#FFFFFF; text-decoration: none">Pompéia - Água Branca - São Paulo</a><br/><br/>
-           <h3>Telefone / WhatsApp:</h3><br/> <a href="tel:+55-11-3862-4428" style="color:#FFFFFF; text-decoration: none">(11) 3862-4428 (clique aqui para nos ligar)</a><br/><br/>
-           <a href="https://api.whatsapp.com/send/?phone=5511984332546" style="color:#FFFFFF; text-decoration: none">(11) 98433-2546 (clique aqui para abrir o whatsapp)</a> <br/><br/>
-           <b class="text-h6">Abrimos todos os dias das 7h às 21h, inclusive aos domingos e feriados</b>
+          <h2 style="color:#000000">Nossa loja</h2>
+          <br/>
+          <h3><v-icon>mdi-google-maps</v-icon>Rua Carlos Vicari, 235, Pompéia, São Paulo - SP</h3> <a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9">(clique aqui para abrir o google maps)</a><br/>
+           <a href="https://goo.gl/maps/kLx8zsfHkDytiwGL9" style="color:#000000; text-decoration: none"></a><br/>
+           <h2 style="color:#000000">Telefone / WhatsApp:</h2><br/> 
+           <h2>(11)3862-4428</h2><a href="tel:+55-11-3862-4428">(clique aqui para nos ligar)</a><br/><br/>
+           <h2>(11) 98433-2546</h2><a href="https://api.whatsapp.com/send/?phone=5511984332546">(clique aqui para abrir o whatsapp)</a> <br/><br/>
+           <b class="text-h6" style="color:red;" ><i>Abrimos todos os dias das 7h às 21h, inclusive aos domingos e feriados</i></b>
          
         </v-card-text>
 
