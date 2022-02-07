@@ -58,9 +58,31 @@
           :max-width="400"
           :src="require('@/assets/pneu.jpg')"
         
-        />     
+        /> 
+        <v-container id="div5" align="center">   
+          <v-row style="text-align: center;">
+            <v-col>
+               <v-icon x-large color="black">mdi-tire</v-icon><br/>
+              Desenho Assimétrico
+            </v-col>
+            <v-col>
+               <v-icon x-large color="black">mdi-road-variant</v-icon><br/>
+              Alta Aderência
+            </v-col>
+            <v-col>
+              <v-icon x-large color="black">mdi-shield-star-outline</v-icon><br/>
+              Qualidade Premium
+            </v-col>
+            <v-col>
+              <v-icon x-large color="black">mdi-volume-off</v-icon><br/>
+              Baixo Ruído
+            </v-col>
+          </v-row>
+        </v-container>
       </v-card>
     </v-container>
+    
+
     <v-container id="div2" align="left">
       <v-row align-text="left" no-gutters> 
         <v-img 
@@ -124,7 +146,160 @@
         Especificações Técnicas
       </v-card-title>
       <v-card-text>
-          <br/>
+        <table> 	
+			  	<tr>
+						<td>
+							<p>Marca</p>
+						</td>
+						<td>
+							<p>MICHELIN</p>
+						</td>
+					</tr>
+          <tr>
+						<td>
+							<p>Modelo</p>
+						</td>
+						<td>
+							<p>PRIMACY 4</p>
+						</td>
+					</tr>
+				  <tr>
+						<td>
+							<p>Medida</p>
+						</td>
+						<td>
+							<p>225/50R17</p>
+						</td>
+					</tr>
+			  	<tr>
+						<td>
+							<p>Largura</p>
+						</td>
+						<td>
+							<p>225mm</p>
+						</td>
+					</tr>
+				  <tr>
+						<td>
+							<p>Perfil</p>
+						</td>
+						<td>
+						  <p>50%</p>
+						</td>
+				  </tr>
+			    <tr>
+						<td>
+							<p>Aro</p>
+						</td>
+						<td>
+							<p>17</p>
+						</td>
+					</tr>
+			  	<tr>
+						<td>
+							<p>Diâmetro total em mm</p>
+						</td>
+						<td>
+							<p>656.8</p>
+						</td>
+					</tr>
+			  	<tr>
+            <td>
+              <p>Índice de peso</p>
+            </td>
+            <td>
+              <p>98 - 750 kg</p>
+            </td>
+			  	</tr>
+			  	<tr>
+						<td>
+							<p>Índice de velocidade</p>
+						</td>
+						<td>
+							<p>Y - 300 km/h</p>
+						</td>
+					</tr>
+			  	<tr>
+						<td>
+							<p>Tipo de construção</p>
+						</td>
+						<td>
+							<p>RADIAL</p>
+						</td>
+					</tr>
+			  	<tr>
+            <td>
+                <p>Peso</p>
+            </td>
+            <td>
+                <p>9.54</p>
+            </td>
+           </tr>
+                <tr>
+						<td>
+							<p>Extra Load</p>
+						</td>
+						<td>
+							<p>SIM</p>
+						</td>
+					</tr>
+				  <tr>
+						<td>
+							<p>Protetor de bordas</p>
+						</td>
+						<td>
+							<p>NÃO</p>
+						</td>
+					</tr>
+				  <tr>
+						<td>
+							<p>Sidewall</p>
+						</td>
+						<td>
+							<p>BSW LETRAS PRETAS</p>
+						</td>
+					</tr>
+				<tr>
+						<td>
+							<p>Tipo de terreno</p>
+						</td>
+						<td>
+							<p>HT</p>
+						</td>
+					</tr>
+				<tr>
+						<td>
+							<p>Desenho</p>
+						</td>
+						<td>
+							<p>Assimétrico</p>
+						</td>
+					</tr>
+				<tr>
+						<td>
+							<p>Registro Inmetro</p>
+						</td>
+						<td>
+							<p>002711/2017</p>
+						</td>
+					</tr>
+			  	<tr>
+						<td>
+							<p>Garantia</p>
+						</td>
+						<td>
+							<p>5 anos Contra Defeito de Fabricação</p>
+						</td>
+					</tr>
+			  	<tr>
+						<td>
+							<p>Observações</p>
+						</td>
+						<td>
+							<p>Produto novo. Imagem meramente ilustrativa</p>
+						</td>
+					</tr>
+        </table>
         
       </v-card-text>     
     </v-card>
@@ -213,7 +388,7 @@
     border-radius:10px;
     max-width: 600px;
     height: 500px;
-    margin-top: 30px ;
+    margin-top: 60px ;
     
   
   }
@@ -235,5 +410,22 @@
     margin-top: 30px ;
 
   }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
   
-  </style>
+</style>
