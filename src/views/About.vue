@@ -131,7 +131,11 @@
         </v-card-title>
           <v-card-text>
              <br/>
-            O pneu Michelin Primacy 4 é um modelo que se destaca pela alta durabilidade e quilometragem, sendo que consegue manter as suas características de desempenho por muito mais tempo, ou seja, mesmo quando já está mais desgastado, é um pneu seguro e com excelente desempenho em curvas e frenagens, pois tem preservadas as maneiras com que trabalha. Em pista molhada, por exemplo, o desempenho é garantido, pois possui escultura diferenciada nos sulcos, mantendo a capacidade de expulsar a água mesmo com a borracha desgastada. Além disso, é um pneu confortável, silencioso e com ótima aderência em curvas e frenagens, além de apresentar ótimas respostas da direção, mesmo em altas velocidades.
+           Ideal para SUV, 4x4 e sedans, o Michelin Primacy 4 oferece excelência em segurança, economia, durabilidade e conforto. É um pneu completo, perfeito para você que enfrenta diversos desafios. O Michelin Primacy 4 é número um quando falamos em segurança. O desenho da sua banda de rodagem melhorou o desempenho em frenagens em piso molhado, o que aumentou em mais de 20% a expulsão da água. Além disso, é um modelo pensado para o seu bolso. Por durar muito, o período de troca é maior. Esse movimento acontece pelos compostos de última geração utilizados na borracha, aumentando a durabilidade em 30%. O Michelin Primacy 4 também é um pneu que ajuda o meio ambiente, pois é 11% menos resistente ao rolamento em relação ao seu antecessor, diminuindo o consumo de combustível e a emissão de CO2. Se você procura um pneu excelente, encontrou a resposta no Michelin Primacy 4: ideal para o seu veículo.
+
+<p><h2>Sobre a marca Michelin</h2><br/>
+
+A marca Michelin foi fundada em 1889 em Clermont-Ferrand, França e com o passar dos anos tornou-se uma referência em pneus. Produz atualmente pneus para carros, motos, suvs, caminhonetes e muito mais. Os pneus Michelin se consagraram no mercado graças à excelente aderência, durabilidade e conforto. Hoje são utilizados como pneu original de fábrica por diversas montadoras de automóveis, desde carros compactos até superesportivos de alta potência, que precisam de toda a tecnologia dos pneus Michelin para obter os melhores resultados nas pistas.</p>
           </v-card-text>
         
     </v-card>
@@ -146,6 +150,8 @@
         Especificações Técnicas
       </v-card-title>
       <v-card-text>
+        <v-row>
+        <v-col cols="9">
         <table> 	
 			  	<tr>
 						<td>
@@ -300,7 +306,17 @@
 						</td>
 					</tr>
         </table>
-        
+        </v-col>
+          <v-col>
+            <v-img
+                  :src="require('@/assets/inmetro.png')"
+                  contain
+                  class="pa-4"
+                  width="300"
+                
+              />
+          </v-col>
+        </v-row>
       </v-card-text>     
     </v-card>
     <br/><br/>
@@ -314,7 +330,83 @@
         Aplicação
       </v-card-title>
       <v-card-text>
-          <br/>
+        <table>
+					<tr>
+							<td class="uppercase">
+								<b>ALFA ROMEO:</b>&nbsp;
+								159</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>AUDI:</b>&nbsp;
+								A4, A4 II, A5, A6, ALLROAD QUATTRO</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>BMW:</b>&nbsp;
+								SÉRIE 3, SÉRIE 3 II, SÉRIE 3 III, X1</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>CHEVROLET:</b>&nbsp;
+								CRUZE, CRUZE SPORT6</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>CITROEN:</b>&nbsp;
+								DS5</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>DS:</b>&nbsp;
+								DS5</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>FORD:</b>&nbsp;
+								FUSION, FUSION II, FUSION III</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>HONDA:</b>&nbsp;
+								ACCORD</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>HYUNDAI:</b>&nbsp;
+								SONATA</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>JAGUAR:</b>&nbsp;
+								XE</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>MERCEDES:</b>&nbsp;
+								CLASSE C, CLASSE C II, CLASSE C III</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>MITSUBISHI:</b>&nbsp;
+								ECLIPSE</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>PEUGEOT:</b>&nbsp;
+								3008, 3008.0</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>SUZUKI:</b>&nbsp;
+								S-CROSS</td>
+						</tr>
+					<tr>
+							<td class="uppercase">
+								<b>VOLVO:</b>&nbsp;
+								C30, S40, S60, S80, V40</td>
+						</tr>
+        </table>	
         
       </v-card-text>     
     </v-card>
