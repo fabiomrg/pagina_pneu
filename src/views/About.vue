@@ -7,6 +7,9 @@
     elevate-on-scroll
     dark
   >
+  <div class=" hidden-lg-only">
+    <home-menu/>
+  </div>
     <v-container>
       <v-row  no-gutters>
         <v-col cols="6"
@@ -21,13 +24,13 @@
         </v-col>  
 
          <v-col>     
-          <v-card  >
+          <v-card>
            
              </v-card>
         </v-col>   
 
-        <v-col cols="10"
-        md="5" class="mr-3 hidden-xs-only">     
+        <v-col id="address" cols="10"
+        md="5" class="mr-3 hidden-md-only hidden-xs-only hidden-sm-only">     
           <v-card class="pa-4" color="transparent" height="80" elevation="0"  >
             <v-icon left color="white">
               mdi-google-maps
@@ -37,7 +40,7 @@
           </v-card>
         </v-col>
             
-        <v-col md="2"  class="hidden-xs-only"> 
+        <v-col md="2"  class="hidden-md-only hidden-xs-only hidden-sm-only"> 
           <v-card  class="pa-4" color="transparent" height="80" elevation="0"  >
             <v-icon left color="white">
               mdi-phone
@@ -52,6 +55,9 @@
   </v-app-bar>
   <v-row>
     <v-container id="div4" align="right">
+      <div style="padding-left: 20px;">
+        <h4 class="black--text font-weight-black hidden-lg-only  hidden-xl-only"> Pneu ARO 17 PRIMACY 4 225/50R17 98Y XL</h4><br/>
+      </div>
       <v-card elevation="4"> 
         <v-img  
           class="mx-auto" 
@@ -82,39 +88,41 @@
       </v-card>
     </v-container>
     
-
     <v-container id="div2" align="left">
-      <v-row align-text="left" no-gutters> 
-        <v-img 
-          max-width="200"
-          :src="require('@/assets/michelin-logo.png')"
-        />
-      </v-row>  
+      <div id="greenButton">  
+          <v-img 
+            max-width="200"
+            :src="require('@/assets/michelin-logo.jpg')"
+          />
+      </div>
       <br/>
+      <div id="spec">
+        <h2 class="black--text font-weight-black"> Pneu ARO 17 PRIMACY 4 225/50R17 98Y XL</h2><br/>
       
-      <h2 class="black--text font-weight-black"> Pneu ARO 17 PRIMACY 4 225/50R17 98Y XL</h2><br/>
-    
       <ul>
         <li class="black--text font-weight-black"><h2>Aceitamos todos os cartões de crédito</h2></li>
         <li class="black--text font-weight-black"><h2>PIX</h2></li>  
       </ul> 
+      </div>
       <br/>
-      <v-btn 
-        color="green" 
-        class="white--text" 
-        @click="dialog = true"
-        height="80">
+      <div id="greenButton">
+        <v-btn 
+          color="green" 
+          class="white--text" 
+          @click="dialog = true"
+          height="80">
 
-          <v-icon color="white" x-large>mdi-whatsapp</v-icon>
-            <v-col>  
-              <v-row>
-                Televendas/whatsapp<br/>
-                (11)98433-2546<br/>
-                
-              </v-row> 
-             
-            </v-col>
-      </v-btn>
+            <v-icon color="white" x-large>mdi-whatsapp</v-icon>
+              <v-col>  
+                <v-row>
+                  Televendas/whatsapp<br/>
+                  (11)98433-2546<br/>
+                  
+                </v-row> 
+              
+              </v-col>
+        </v-btn>
+      </div>
       <br/><br/>
       <h2 class="black--text font-weight-black"> Abrimos todos os dias, inclusive aos domingos e feriados</h2>
     </v-container> 
@@ -460,6 +468,10 @@ A marca Michelin foi fundada em 1889 em Clermont-Ferrand, França e com o passar
         dialog: false,
       }
     },
+    components: {
+      
+      HomeMenu: () => import('@/views/menu'),
+    },
   }
 </script>
 
@@ -474,6 +486,7 @@ A marca Michelin foi fundada em 1889 em Clermont-Ferrand, França e com o passar
     background: #ffffff;
   
   }
+  
   #div2{
     
     
@@ -491,7 +504,6 @@ A marca Michelin foi fundada em 1889 em Clermont-Ferrand, França e com o passar
     height: 500px;
     margin-top: 30px ;
     
-  
   }
 
    #div4{
@@ -502,6 +514,17 @@ A marca Michelin foi fundada em 1889 em Clermont-Ferrand, França e com o passar
     margin-top: 30px ;
 
   }
+  #spec{
+    padding-left: 40px;
+    
+
+  }
+
+  #greenButton{
+    display: flex;
+    justify-content: center; 
+  }
+
 
   table {
     font-family: arial, sans-serif;
